@@ -28,5 +28,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "groupe1-dev"
           heroku_email: "gatien.boquet@gmail.com"
+          healthcheck: "https://groupe1-dev.herokuapp.com"
           usedocker: true
           dontuseforce: 0
