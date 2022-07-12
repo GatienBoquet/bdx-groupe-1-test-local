@@ -29,4 +29,4 @@ jobs:
           heroku_app_name: "groupe1-dev"
           heroku_email: "gatien.boquet@gmail.com"
           usedocker: true
-          dontuseforce: false
+          dontuseforce: 0
