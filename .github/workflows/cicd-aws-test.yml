@@ -37,7 +37,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
           
             #Now we have got the access of EC2 and we will start the deploy .
-            docker pull ghcr.io/ib-groupe1-bdx/bdx-groupe-1:latest
-            docker run -d -p 3001:3000 ghcr.io/ib-groupe1-bdx/bdx-groupe-1:latest
-            docker-compose -f docker-compose.yml up -d --build 
+            git clone https://github.com/GatienBoquet/bdx-groupe-1-test-local.git
+            cd bdx-groupe-1-test-local
+            docker build -t test-local .
+            docker run -d -p 3000:3000 test-local 
           '
