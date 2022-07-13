@@ -39,5 +39,5 @@ jobs:
             #Now we have got the access of EC2 and we will start the deploy .
             cut -d: -f1 /etc/passwd
             git clone https://github.com/GatienBoquet/bdx-groupe-1-test-local.git
-            docker-compose -f docker-compose.prod.yml up -d --build 
+            docker-compose -f docker-compose.yml up -d --build 
           '
