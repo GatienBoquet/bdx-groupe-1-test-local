@@ -38,8 +38,6 @@ jobs:
           
             #Now we have got the access of EC2 and we will start the deploy .
             cut -d: -f1 /etc/passwd
-            mkdir dossiergithub
-            cd /dossiergithub &&
             git checkout main &&
             git fetch --all &&
             git reset --hard origin/main &&
