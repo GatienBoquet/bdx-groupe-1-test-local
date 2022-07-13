@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  counter_app:
+    container_name: bdx-groupe1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
