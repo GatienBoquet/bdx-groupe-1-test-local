@@ -19,7 +19,7 @@ En effet, sur chaque pull request et sur chaque commit de cette pull request, la
 Avec ces trois conditions, nous nous assurons un bon fonctionnement du projet avant de merger sur la main branche.
 La branche main représente donc pour nous l'environnement  staging et prod.
 
-Le concept de CICD est respecté et permet un cycle de développement de l'application rapide et concis.
+Le concept de CICD ♾️ est respecté et permet un cycle de développement de l'application rapide et concis.
 
 ![Dev Ops](https://3.bp.blogspot.com/-Ecj2B__l7nA/XH-X3IULJYI/AAAAAAAABjQ/EtAL40fOPbk_G_t0GfKniuSjZB-lR0HWACLcBGAs/s640/traditional-devops.png)
 ## 🧮 Les fonctionnallités de la pipeline
@@ -56,7 +56,8 @@ Si la pull request est mergé, la pipepine staging s'enclenche.
 
 ### 🌠 La pipeline CI et CD Staging et Prod
 
-- TODO
+- On test 
+- On upload sur un EC2 AWS
 - add moniroting
 
 
@@ -70,7 +71,7 @@ Si la pull request est mergé, la pipepine staging s'enclenche.
 ![Pipeline prod](https://i.imgur.com/saUIvmh.png)
 
 
-![Pipeline prod](https://i.imgur.com/e07mQfIl.png)
+![Pipeline prod](https://i.imgur.com/Z2qQR9H.png)
 
 
 ## 🖥️ Le stack du site web
@@ -185,3 +186,4 @@ What did you learn while building this project? What challenges did you face and
 
 ## 💡 Améliorations possibles
 
+-- Rajouter une plus grosse étapes de monitoring
