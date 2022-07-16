@@ -152,11 +152,12 @@ What did you learn while building this project? What challenges did you face and
 
 ## Diagramme séquentielle
 
-
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
+    participant Repository
+    participant Continous Integration
+    participant Continous Deployment
+    participant Environments
     Alice->>John: Hello John, how are you?
     loop Healthcheck
         John->>John: Fight against hypochondria
@@ -166,3 +167,4 @@ sequenceDiagram
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
 ```
+
