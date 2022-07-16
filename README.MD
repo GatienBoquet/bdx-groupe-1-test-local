@@ -1,5 +1,4 @@
 
-
 ![Logo](https://github.blog/wp-content/uploads/2019/08/DL-V2-LinkedIn_FB.png?fit=1200%2C630)
 
 
@@ -9,8 +8,12 @@
 - Assurez-vous d'avoir les bonnes variables d'environements
 - Avoir un compte AWS et Heroku
 
+### Pipeline Prod
+![Pipeline prod](https://i.imgur.com/saUIvmh.png)
 
-![Logo](https://i.imgur.com/saUIvmh.png)
+
+![Pipeline prod](https://i.imgur.com/e07mQfIl.png)
+
 ## Le stack du site web
 
 **Client:** HTML, CSS
@@ -31,7 +34,7 @@
 **Registre de container:** GitHub Registry container
 
 **WebHook:** Slack
-## Pour installer le projet
+## 📋 Pour installer le projet
 
 Vous pouvrz installer le projet avec le gestionnaire de paquage npm.
 Vous avez besoin d'un serveur Node.JS avec la version 14.16
@@ -40,16 +43,11 @@ Vous avez besoin d'un serveur Node.JS avec la version 14.16
   npm install bdx-groupe-1
   cd my-project
 ```
-    
-## Installation pipeline
 
-- Télécharger les fichiers ci.yml et cd.yml 
-- Assurez-vous d'avoir les bonnes variables d'environnements
-- Avoir un compte AWS et Heroku
-
-
-
-## Auteurs
+- [ ]  Avoir un serveur Node.JS
+- [ ]  Avoir les variables d'environements en place
+- [ ]  Avoir un compte Heroku et AWS
+## 📝 Auteurs
 
 - [@arnaudtron](https://www.github.com/arnaudtron)
 - [@karim](https://www.github.com/styldown)
@@ -62,10 +60,25 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-## Détails Git
+## ❗Détails GitHub Important
 
 Nous avons décidé de protéger la brache main du projet github. 
-Afin de bien dérouler la pipeline dev, deux reviewers doivent accepter un merge request.
+Afin de réduire la redondance et de faciliter la pipeline CICD.
+L'idée est simple : La branche main est prôtégée.
+
+1. Nous avons besoin de faire un pull request avant de mergé sur la 'main'.
+2. 2 personnes doivent review la pull request avant de pouvoir mergé sur la 'main'.
+
+Cela assurer une qualité de code et de fonctionnement du projet.
+
+Aussi, nous pouvons ajouter une condition sur les tests de la pipeline CI.
+En effet, sur chaque pull request et sur chaque commit de cette pull request, la pipeline CI nous permets de vérifier le bon fonctionnement du projet.
+
+Avec ces trois conditions, nous nous assurons un bon fonctionnement du projet avant de merger sur la main branche.
+La branche main représente donc pour nous l'environnement  staging et prod.
+
+Le concept de CICD est respecté et permet un cycle de développement de l'application rapide et concis.
+
 ## Les variables d'environements 
 
 Pour pouvoir assurer le fonctionnement  de la pipeline CICD, vous avez besoin de définir certaines variables. 
@@ -136,3 +149,20 @@ What did you learn while building this project? What challenges did you face and
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+
+## Diagramme séquentielle
+
+
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
