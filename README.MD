@@ -154,17 +154,29 @@ What did you learn while building this project? What challenges did you face and
 
 ```mermaid
 sequenceDiagram
+    autonumber
+    actor Developpeur
     participant Repository
-    participant Continous Integration
-    participant Continous Deployment
-    participant Environments
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
+    participant CI 
+    participant CD
+    participant Environements
+    participant Slack
+    Developpeur->>+Repository: Commit Code 
+    loop Every merge request
+        Repository->>+CI: Télécharge le repo
+        CI->>+CI: Test Unitaires
+        CI->>+CI: Test Sécurité
+        CI-->>+Repository: Upload du résultat sécurité sur CodeScanning
+        CI->>+CI: Super Linter
+        CI->>+CI: Build de l'image
+        CI->>+Slack: Notification de statut du build
+        CI->>+Repository: Upload de l'image sur le repo GitHub
+        Repository->>+CD: Téléchargment de la dernière image 
+        CD->>+Environements: Déploiement
+        Note right of Environements: Heroku (Dev)
+        CD-->>CD: Healthcheck 
+        CD->>+Slack: Notification de statut du déploiement
+        CD->>Repository: Feedback des tests
     end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
 ```
 
