@@ -94,7 +94,7 @@ Si la pull request est mergé, la pipepine staging s'enclenche.
 **Registre de container:** GitHub Registry container
 
 **WebHook:** Slack
-## 🔀 Diagramme séquentielle
+## 🔀 Diagramme séquentielle de la branche Dev
 
 
 ```mermaid
