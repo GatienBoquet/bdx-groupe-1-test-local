@@ -6,24 +6,36 @@
 
 Nous avons reçu la mission de faire une pipeline CICD sur un projet Node.JS. 
 
-Le code était sur GitHub donc nous avons décidé de faire une pipline 100% github.
-Pour le bon déroulement du projet, nous avons décidé de protéger la brache main.
+Le code était sur GitHub donc nous avons décidé de faire une pipeline 100% github.
+Dans un but de minimiser la friction de la mise en place de la dit pipeline et sa mise en prod.
 
-Deux conditions s'appliquent :
-1. Nous avons besoin de faire un pull request avant de mergé sur la 'main'.
-2. 2 personnes doivent review la pull request avant de pouvoir mergé sur la 'main'.
-
-Cela assurer une qualité de code et de fonctionnement du projet.
-
-Aussi, nous pouvons ajouter une condition sur les tests de la pipeline CI.
-En effet, sur chaque pull request et sur chaque commit de cette pull request, la pipeline CI nous permets de vérifier le bon fonctionnement du projet.
-
-Avec ces trois conditions, nous nous assurons un bon fonctionnement du projet avant de merger sur la main branche.
-La branche main représente donc pour nous l'environnement  staging et prod.
-
-Le concept de CICD ♾️ est respecté et permet un cycle de développement de l'application rapide et à haute intencité.
+Cela colle à la philosophie devops qui est de rendre un cycle de développement le plus court possible.
+- Une plus grande rapidité dans le développement de l'application
+- Une livraison plus rapide du produit
+- Une augmentation de la fiabilité du produit 
+- Une évolutivité constante 
+- Une collaboration accrue entre les devs et les Ops
+- Un accent sur la sécurité
 
 ![Dev Ops](https://3.bp.blogspot.com/-Ecj2B__l7nA/XH-X3IULJYI/AAAAAAAABjQ/EtAL40fOPbk_G_t0GfKniuSjZB-lR0HWACLcBGAs/s640/traditional-devops.png)
+
+Concernant Git :
+Nous avons décidé de protéger la brache main.
+
+Deux conditions s'appliquent grâce aux options du repo : 
+1. Nous avons besoin de faire un pull request avant de mergé sur la 'main'.
+2. 2 personnes doivent review la pull request.
+
+Cela assure une qualité de code et de fonctionnement du projet car la pipeline CI s'active sur chaque pull request et chaque nouveau commit sur cette dernière.
+
+La pipeline CI nous permet de vérifier le bon fonctionnement du projet à chaque instant.
+
+Avec ces trois conditions, nous nous assurons un bon fonctionnement du projet avant de merger sur la main branche.
+La branche main représente donc pour nous l'environnement staging et prod.
+
+Le concept de CICD ♾️ est respecté et permet un cycle de développement de l'application rapide et à haute intensité.
+
+
 ## GitHub Actions en Bref
 
 Le fonctionnement de GitHub Actions:
@@ -187,7 +199,7 @@ Github Actions ne faisait pas partie du cursus de notre formation; nous avons pu
  - [Ulrich MONJI](https://github.com/ulrichmonji)
  - [Git Workflow](https://medium.com/@patrickporto/4-branching-workflows-for-git-30d0aaee7bf)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
+ - [Mermaid Live Editor](https://mermaid.live/edit#pako:eNqFVMFu2zAM_RVCl3VY9wM-9LA4WwIMOyzrzRdFZhIitqRKVICg6P8s3-EfG-W4SZykmA0YJvn4-EhTflXG1agKFfEloTVYkl4H3VYW5NKJnU3tEsNgG3YBStxh47zHNLi9DkyGvLYMv9G7SALb38Ymc7jjLG99U7uj4Cy2aDnehheNNtuj-0LL16enL-fqBUxc25LwS39D2cY5D9Mdhj20GNYIITcd-RjN1zk_s03mBfzpDk13MBud8U1O8e6Mn8xPOOGBZ0usKWD8ELEQrhSIu8MIcq392TdO11AnCN0hpoY1QzylQkyh72thtLVk1_fKLZLHAD_J8vvXG8e_JWqkgjT1iVq9xmtMP-QCfjmmFRnN5GxGR5GSOCtbZoLrrHtNnEr0uocZwg_iWVp-OPpyNPq8CD2Rlmew1P0NCEfOCwVlzhztTgFldxAZ1JtnqHQlMmi9YXAruEqZYXDbBA-yW59H7EKfdc1QN7wxGzTbm-r_nVp9V0-ffDm774j1UqgkOQLL5gwrhVZGnu9sqEcle9xqquUAv2ZfpXgj1JUq5LXWYVupyr4JLvlaM07rTK8KDgkfVT7di7017_YRM_wAVLHSTcS3f4AHXc4)
 
 ## 📜 License
 
