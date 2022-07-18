@@ -174,8 +174,13 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-![Website Dev](https://img.shields.io/website?label=DEV&style=plastic&url=https%3A%2F%2Fgroupe1-dev.herokuapp.com%2F)
-![Website](https://img.shields.io/website?label=Staging&style=plastic&url=http%3A%2F%2Fec2-15-188-51-176.eu-west-3.compute.amazonaws.com%2F)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ib-groupe1-bdx/bdx-groupe-1/Continuous%20Delivery)
+
+### 
+![Website Dev](https://img.shields.io/website?label=Dev&style=plastic&url=https%3A%2F%2Fgroupe1-dev.herokuapp.com%2F)
+![Website Staging](https://img.shields.io/website?label=Staging&style=plastic&url=http%3A%2F%2Fec2-15-188-51-176.eu-west-3.compute.amazonaws.com%2F)
+![Website Prod](https://img.shields.io/website?label=Prod&style=plastic&url=http://ec2-52-47-121-107.eu-west-3.compute.amazonaws.com/)
+
 
 ## 🔐 Les variables d'environements 
 
