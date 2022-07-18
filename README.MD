@@ -44,7 +44,7 @@ Le fonctionnement de GitHub Actions:
 ## 🧮 Les fonctionnallités de la pipeline
 Nous avons 3 pipelines, Dev, Staging puis Prod
 
-### ⛹️‍♂️ La pipeline CI Dev, étape par étape
+### ⛹️‍♂️ La pipeline CI étape par étape
 
 - On récupère le contenu de notre repository
 - On installe Node.JS 
@@ -66,18 +66,18 @@ Puis pour finir, la dernière étape consiste à notifier le résultat sur slack
 Une fois les tests finit, on regarde ensemble pour mérger la pull request.
 Si la pull request est mergé, la pipepine staging s'enclenche.
 
-### 🤾‍♂️ La pipeline CD Dev
+### 🤾‍♂️ La pipeline CD
 
 - On récupère le package sur le repo github 
 - On le deploy sur heroku
 - On fait un healthcheck pour s'assurer du bon fonctionnement
 - On envoie une notification sur Slack
 
-### 🌠 La pipeline CI et CD Staging et Prod
+### 🌠 La pipeline CD : Staging et Prod
 
-- On test 
 - On upload sur un EC2 AWS
-- add monitoring
+- On réalise un healthcheck pour vérifier le bon fonctionnement du déploiement
+- On monitore avec CloudWatch sur AWS
 
 
 ## 🔬 Installation pipeline
