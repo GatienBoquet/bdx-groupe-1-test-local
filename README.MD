@@ -210,3 +210,6 @@ Github Actions ne faisait pas partie du cursus de notre formation; nous avons pu
 
 - Rajouter une plus grosse étape sur le monitoring : AWS CloudWatch
 - Avoir un linter plus rapide, comme MegaLinter
+- Utiliser docker compose pour avoir moins de commandes lors du lancement dans les environements AWS
+- Utiliser un loadbalancer pour éviter le downtime en staging et prod
+- Rajouter une "release notes" automatique à la fin de la pipeline CI
