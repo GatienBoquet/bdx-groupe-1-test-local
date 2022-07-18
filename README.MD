@@ -146,7 +146,7 @@ sequenceDiagram
     end
 ```
 
-## 🪛 Pour installer le projet en local
+## 💻 Pour installer le projet en local
 
 Vous pouvez installer le projet avec le gestionnaire de paquage npm.
 Vous avez besoin d'un serveur Node.JS avec la version 14.16
@@ -162,6 +162,7 @@ Vous avez besoin d'un serveur Node.JS avec la version 14.16
 - [@arnaudtron](https://www.github.com/arnaudtron)
 - [@karim](https://www.github.com/styldown)
 - [@gatienboquet](https://www.github.com/gatienboquet)
+
 ## 🔔 Badges
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
