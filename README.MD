@@ -53,8 +53,8 @@ Nous avons 3 pipelines, Dev, Staging puis Prod
 - On lance le serveur Node.JS
 - On lance les tests unitaires
 Puis si cela fonctionne on passe à la sécurité :
-- On lance snyk vérifié s'il y a d'éventuelles vulnérabilités
-- On upload le résultat sur CodeScanning, un service disponible sur GitHub directement dans notre repo.
+- On lance l'utilitaire snyk qui vérifie s'il y a d'éventuelles vulnérabilités
+- On upload le résultat sur CodeScanning, un service disponible sur GitHub directement dans notre repo. Le résultat est aussi disponible sur notre compte Snyk.io
 S'il n'y a aucunes vulnérabilités, on passe à l'étape du Linter.
 - On récupère le contenu du repository.
 - On vérifie le repo avec super-linter qui vérifie la qualité du code.
