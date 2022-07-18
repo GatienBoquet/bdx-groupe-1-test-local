@@ -63,7 +63,7 @@ Puis on passe à l'étape du build de l'image
 - On la push sur le package repository associé à notre répo github.
 Puis pour finir, la dernière étape consiste à notifier le résultat sur slack.
 
-Une fois les test finit, on regarde ensemble pour mérger la pull request.
+Une fois les tests finit, on regarde ensemble pour mérger la pull request.
 Si la pull request est mergé, la pipepine staging s'enclenche.
 
 ### 🤾‍♂️ La pipeline CD Dev
