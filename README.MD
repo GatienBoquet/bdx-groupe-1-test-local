@@ -20,7 +20,7 @@ Cela colle à la philosophie devops qui est de rendre un cycle de développement
 ![Dev Ops](https://3.bp.blogspot.com/-Ecj2B__l7nA/XH-X3IULJYI/AAAAAAAABjQ/EtAL40fOPbk_G_t0GfKniuSjZB-lR0HWACLcBGAs/s640/traditional-devops.png)
 
 Concernant Git :
-Nous avons décidé de protéger la brache main.
+Nous avons décidé de protéger la branche main.
 
 Deux conditions s'appliquent grâce aux options du repo : 
 1. Nous avons besoin de faire un pull request avant de mergé sur la 'main'.
