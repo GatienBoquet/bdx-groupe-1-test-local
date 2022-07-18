@@ -213,5 +213,5 @@ Github Actions ne faisait pas partie du cursus de notre formation; nous avons pu
 - Utiliser docker compose pour avoir moins de commandes lors du lancement dans les environements AWS
 - Utiliser un loadbalancer pour éviter le downtime en staging et prod
 - Rajouter une "release notes" automatique à la fin de la pipeline CI
-- Utiliser CodeDeploy pour la prod4
+- Utiliser CodeDeploy, un service de AWS pour le déploiement en prod
 - Faire une wiki ou github pages du projet
