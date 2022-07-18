@@ -77,7 +77,7 @@ Si la pull request est mergé, la pipepine staging s'enclenche.
 
 - On upload sur un EC2 AWS
 - On réalise un healthcheck pour vérifier le bon fonctionnement du déploiement
-- On monitore avec CloudWatch sur AWS
+- On monitor avec CloudWatch sur AWS 
 
 
 ## 🔬 Installation pipeline
