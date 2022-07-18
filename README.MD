@@ -58,10 +58,10 @@ Puis si cela fonctionne on passe à la sécurité :
 S'il n'y a aucunes vulnérabilités, on passe à l'étape du Linter.
 - On récupère le contenu du repository.
 - On vérifie le repo avec super-linter qui vérifie la qualité du code.
-Puis un passe à l'étape du build de l'image
+Puis on passe à l'étape du build de l'image
 - On build l'image avec BuildX
 - On la push sur le package repository associé à notre répo github.
-Puis pour finir, la dernière étape consiste à notifier du résultat sur slack.
+Puis pour finir, la dernière étape consiste à notifier le résultat sur slack.
 
 Une fois les test finit, on regarde ensemble pour mérger la pull request.
 Si la pull request est mergé, la pipepine staging s'enclenche.
