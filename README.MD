@@ -152,9 +152,13 @@ Vous pouvez installer le projet avec le gestionnaire de paquage npm.
 Vous avez besoin d'un serveur Node.JS avec la version 14.16
 
 ```bash
-  npm install bdx-groupe-1
-  cd my-project
-  npm run start
+git clone https://github.com/[GIT_ID]/bdx-groupe-1
+cd bdx-groupe-1
+npm install
+npm run start
+git add . 
+git commit -m "first commit" 
+git push origin [PrénomNom]
 ```
 
 ## 📝 Auteurs
